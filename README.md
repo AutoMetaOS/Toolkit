@@ -1,7 +1,9 @@
 # WebToolkit
 A Basic Web toolkit
 
-<img width="100%" height="200px" src="./static/AMKit.svg" />
+<div style="text-align:center;width:100%;">
+<img width="300px" height="300px" src="./static/AMKitML.png" />
+</div>
 
 ## Building
 
