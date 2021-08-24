@@ -1,0 +1,15 @@
+{
+	"name": "celestia-courses",
+	"version": "0.0.0",
+	"scripts": {},
+	"dependencies": {
+		"@node-minify/babel-minify": "^6.2.0",
+		"@node-minify/core": "^6.2.0",
+		"@node-minify/html-minifier": "^6.2.0",
+		"@node-minify/jsonminify": "^6.2.0",
+		"@node-minify/sqwish": "^6.2.0",
+		"body-parser": "^1.19.0",
+		"jabber": "^1.2.2",
+		"nanoexpress": "^5.0.8"
+	}
+}
