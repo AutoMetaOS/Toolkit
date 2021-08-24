@@ -2,9 +2,9 @@ const fs = require( 'fs' );
 const path = require( 'path' );
 const app = require( 'nanoexpress' )();
 
-const gen = require( './generators' );
-const std = require( './standards' );
-const min = require( './minifiers' );
+const gen = require( './server/generators' );
+const std = require( './server/standards' );
+const min = require( './server/minifiers' );
 
 app.get( '/minify/css', async ( req, res ) => {
     const minified = await min.css( req.body );
