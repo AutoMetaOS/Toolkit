@@ -8,3 +8,4 @@ build/
 
 *.css.map
 *.js.map
+*.jsc

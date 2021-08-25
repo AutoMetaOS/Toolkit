@@ -1,9 +1,0 @@
-{
-	"name": "celestia-courses",
-	"version": "0.0.0",
-	"scripts": {
-		"dockerise": "docker build -t educelestia . && docker build -t registry.heroku.com/educelestia/web .",
-		"release": "docker push registry.heroku.com/educelestia/web && heroku container:release web -a educelestia",
-		"direct": "npm run build && npm run dockerise && npm run release"
-	}
-}

@@ -5,6 +5,7 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "deploy": "npx gh-pages -d build -t true",
+    "direct": "npm run build && npm run deploy",
     "start": "php -q -S localhost:3000"
   },
   "devDependencies": {

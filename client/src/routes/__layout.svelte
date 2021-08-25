@@ -1,7 +1,8 @@
-<section>
-    <p class="†c m20">
+<section class="m20">
+    <p class="†c m0">
         <img src="/images/AMKitML.png" alt="Welcome" />
         <span> AutoMetaKit v1 </span>
+        <br />
     </p>
     <slot />
 </section>

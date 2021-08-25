@@ -1,6 +1,7 @@
 
 const CALL = async ( endpoint, body ) => {
-    const server = 'http://localhost:3000/';
+    // const server = 'http://localhost:3000/';
+    const server = 'https://amoskit.herokuapp.com';
 
     try {
         const response = await fetch( server + endpoint, {

@@ -1,15 +1,21 @@
 {
 	"name": "celestia-courses",
 	"version": "0.0.0",
-	"scripts": {},
-	"dependencies": {
+	"scripts": {
+		"dockerise": "docker build -t registry.heroku.com/amoskit/web .",
+		"release": "docker push registry.heroku.com/amoskit/web && heroku container:release web -a amoskit",
+		"direct": "npm run dockerise && npm run release"
+	},
+	"devDependencies": {
 		"@node-minify/babel-minify": "^6.2.0",
 		"@node-minify/core": "^6.2.0",
 		"@node-minify/html-minifier": "^6.2.0",
 		"@node-minify/jsonminify": "^6.2.0",
 		"@node-minify/sqwish": "^6.2.0",
-		"body-parser": "^1.19.0",
-		"jabber": "^1.2.2",
+		"jabber": "^1.2.2"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
 		"nanoexpress": "^5.0.8"
 	}
 }
