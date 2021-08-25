@@ -1,9 +1,19 @@
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+import sveltePreprocess from 'svelte-preprocess';
+import statix from '@sveltejs/adapter-static';
+import path from 'path';
+
+export default {
+	preprocess: sveltePreprocess(),
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		adapter: statix(),
+
+		target: 'body',
+		vite: {
+			resolve: {
+				alias: {
+					$routes: path.resolve( 'src/routes' ),
+				}
+			}
+		}
 	}
 };
-
-export default config;

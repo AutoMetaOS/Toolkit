@@ -20,6 +20,6 @@
   <rect class="base" x="-130" fill="#2af"  y="-115" rx="40" />
   <image
     height="50%" width="50%" filter="url(#colorMeTheSame)" transform="matrix(0.80,-0.60,0.87,0.60,52,180)"
-    href="https://raw.githubusercontent.com/plutoniumm/AutoMetaKit/main/static/comCode.svg"
+    href="./comCode.svg"
   />
 </svg>

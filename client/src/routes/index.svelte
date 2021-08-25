@@ -1,45 +1,12 @@
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
+<script>
+	import Card from "$lib/Card.svelte";
+	import routes from "$lib/routes.json";
+</script>
 
-		to your new<br />SvelteKit app
-	</h1>
+<div class="w-80 m-20 p-20 ƒ ƒ∑">
+	<div class="w-100 †c">Search Coming soon...</div>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+	{#each routes as route}
+		<Card content={route} />
+	{/each}
+</div>
