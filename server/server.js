@@ -5,12 +5,14 @@ const gen = require( './generators' );
 const std = require( './standards' );
 const min = require( './minifiers' );
 
+const cfg = require( './config.json' )
+
 app.use( cors );
 
 app.options( '/*', cors )
 
 app.get( '/', async ( req, res ) => {
-    return res.send( { data: "AutoMetaKit API IS WORKING!" } );
+    return res.sendFile( './root.html' );
 } );
 
 app.post( '/minify/css', async ( req, res ) => {

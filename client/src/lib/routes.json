@@ -53,7 +53,6 @@
         ]
     },
     {
-        "status": "disabled",
         "name": "Converters",
         "url": "/convert",
         "image": "https://image.flaticon.com/icons/png/512/1366/1366975.png",
@@ -61,6 +60,24 @@
             "TS",
             "SCSS",
             "MD"
+        ]
+    },
+    {
+        "name": "CryptoGraphy",
+        "url": "/crypto",
+        "image": "https://image.flaticon.com/icons/png/512/1366/1366975.png",
+        "desc": [
+            "AES",
+            "SHA",
+            "MD5"
+        ]
+    },
+    {
+        "name": "Processors",
+        "url": "/process",
+        "image": "https://image.flaticon.com/icons/png/512/1366/1366975.png",
+        "desc": [
+            "SVGPath2PNG"
         ]
     }
 ]

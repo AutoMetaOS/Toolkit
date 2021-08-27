@@ -1,7 +1,7 @@
-
-const CALL = async ( endpoint, body ) => {
+const CALL = async ( endpoint, data ) => {
     // const server = 'http://localhost:3000/';
-    const server = 'https://amoskit.herokuapp.com';
+    const server = 'https://amoskit.herokuapp.com/';
+    const body = typeof data === 'string' ? data : JSON.stringify( data );
 
     try {
         const response = await fetch( server + endpoint, {
@@ -13,10 +13,8 @@ const CALL = async ( endpoint, body ) => {
         } );
 
         const data = await response.json();
-        console.log( data );
+        return data;
     } catch ( error ) {
         console.log( error )
-    }
-}
-
-CALL()
+    };
+};
