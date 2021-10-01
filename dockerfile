@@ -11,5 +11,4 @@ COPY --chown=node:node . .
 
 EXPOSE $PORT
 
-CMD [ "bytenode","--compile", "*.js" ]
-CMD [ "bytenode", "server.js" ]
+CMD [ "node","." ]

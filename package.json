@@ -1,6 +1,5 @@
 {
-	"name": "celestia-courses",
-	"version": "0.0.0",
+	"name": "toolkit_files",
 	"scripts": {
 		"dockerise": "docker build -t registry.heroku.com/amoskit/web .",
 		"release": "docker push registry.heroku.com/amoskit/web && heroku container:release web -a amoskit",
@@ -16,6 +15,6 @@
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
-		"nanoexpress": "^5.0.8"
+		"express": "^4.17.1"
 	}
 }

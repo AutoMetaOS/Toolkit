@@ -1,13 +1,21 @@
-const CALL = async ( endpoint, data ) => {
-    // const server = 'http://localhost:3000/';
-    const server = 'https://amoskit.herokuapp.com/';
-    const body = typeof data === 'string' ? data : JSON.stringify( data );
+const cfetch = async ( endpoint, data ) => {
+    // const server = "http://localhost:3000";
+    const server = "";
+    let body = "";
+
+    if ( typeof data === 'string' ) {
+        body = data;
+        body_type = "text/plain";
+    } else {
+        body = JSON.stringify( data );
+        body_type = "application/json";
+    }
 
     try {
         const response = await fetch( server + endpoint, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': body_type
             },
             body
         } );

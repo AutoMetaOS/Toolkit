@@ -10,7 +10,7 @@
     };
 
     const handleClick = (e) => {
-        CALL("/minify/css", input).then((res) => {
+        cfetch("/minify/css", input).then((res) => {
             output = res;
             console.log(output);
         });
