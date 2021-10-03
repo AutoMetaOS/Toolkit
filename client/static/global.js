@@ -1,6 +1,6 @@
 const cfetch = async ( endpoint, data ) => {
-    // const server = "http://localhost:3000";
-    const server = "";
+    const server = "http://localhost:3001";
+    // const server = "";
     let body = "";
 
     if ( typeof data === 'string' ) {

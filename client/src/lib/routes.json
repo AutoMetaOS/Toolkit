@@ -9,7 +9,6 @@
         ]
     },
     {
-        "status": "disabled",
         "name": "Generator",
         "url": "/generate",
         "image": "https://i.pinimg.com/originals/dc/b8/50/dcb8500c06837ab8acba48a18eb367d3.png",
@@ -43,6 +42,7 @@
         ]
     },
     {
+        "status": "disabled",
         "name": "Formatters",
         "url": "/format",
         "image": "https://static.thenounproject.com/png/1596667-200.png",
@@ -53,6 +53,7 @@
         ]
     },
     {
+        "status": "disabled",
         "name": "Converters",
         "url": "/convert",
         "image": "https://image.flaticon.com/icons/png/512/1366/1366975.png",
@@ -63,6 +64,7 @@
         ]
     },
     {
+        "status": "disabled",
         "name": "CryptoGraphy",
         "url": "/crypto",
         "image": "https://image.flaticon.com/icons/png/512/1366/1366975.png",
@@ -73,6 +75,7 @@
         ]
     },
     {
+        "status": "disabled",
         "name": "Processors",
         "url": "/process",
         "image": "https://image.flaticon.com/icons/png/512/1366/1366975.png",

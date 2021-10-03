@@ -1,40 +1,41 @@
 <script>
-    import { TextBox, Button } from "$lib";
+    import { TextBox, Button, Radio } from "$lib";
 
     let //
         input,
+        type = "css",
+        copy = "Copy!",
         output = "";
 
-    const handleChange = (e) => {
-        input = e.detail.text;
-    };
+    const options = [
+        { label: "HTML", value: "html" },
+        { label: "CSS", value: "css" },
+        { label: "JS", value: "js" },
+        { label: "JSON", value: "json" },
+    ];
 
-    const handleClick = (e) => {
-        cfetch("/minify/css", input).then((res) => {
-            output = res;
-            console.log(output);
-        });
-    };
+    const handleChange = (e) => (input = e.detail.text);
+
+    const handleClick = (e) =>
+        cfetch("/minify/" + type, input).then((res) => (output = res.data));
+
+    function copier() {
+        copy = "Copying...";
+        copyToClipboard(output);
+        copy = "Copyied!";
+        setTimeout(() => (copy = "Copy!"), 1000);
+    }
 </script>
 
 <div class="container">
+    <span style="font-size:2em;"> MINIFY </span>
     <p>
-        <span style="font-size:2em;"> MINIFY: </span>
-        <part>
-            {#each ["CSS", "HTML", "JS", "JSON"] as condition}
-                <input
-                    type="radio"
-                    id={condition}
-                    name="selector"
-                    value={condition}
-                />
-                <label for={condition}>{condition}</label>
-            {/each}
-        </part>
+        <Radio {options} bind:selected={type} />
     </p>
     <TextBox name="Input" on:change={handleChange} />
     <Button on:click={handleClick}>Minify</Button>
     <TextBox name="Output" text={output} />
+    <Button on:click={copier}>{copy}</Button>
 </div>
 
 <style>

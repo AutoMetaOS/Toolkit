@@ -30,7 +30,4 @@
         background: #fff;
         border-radius: 10px;
     }
-    textarea {
-        width: auto;
-    }
 </style>

@@ -1,7 +1,7 @@
 <section class="m20">
     <p class="†c m0">
         <img src="/images/AMKitML.png" alt="Welcome" />
-        <span> AutoMetaKit v1 </span>
+        <span> AMOS Tools </span>
         <br />
     </p>
     <slot />

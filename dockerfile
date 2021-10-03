@@ -6,7 +6,6 @@ WORKDIR /home/node/app
 
 COPY --chown=node:node package*.json ./
 RUN npm install
-RUN npm install -g --save bytenode
 COPY --chown=node:node . .
 
 EXPOSE $PORT
