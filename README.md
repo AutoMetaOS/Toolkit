@@ -1,8 +1,8 @@
 # WebToolkit
 A Basic Web toolkit
 
-<div style="text-align:center;width:100%;">
-<img width="300px" height="300px" src="./static/AMKit.svg" />
+<div align="center">
+<img src="./static/AMKit.svg" alt="amos" width="300px" height="300px"/>
 </div>
 
 ## Building
