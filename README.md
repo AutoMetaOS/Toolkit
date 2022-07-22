@@ -5,6 +5,13 @@ A Basic Web toolkit
 <img src="./static/AMKit.svg" alt="amos" width="300px" height="300px"/>
 </div>
 
+```bash
+nixpacks build ./path/to/app --name my-app \
+                             --pkgs cowsay \
+                             --build-cmd ./build.sh \
+                             --start-cmd "echo hello | cowsay"
+```
+
 ## Building
 
 ```
